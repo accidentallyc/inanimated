@@ -33,7 +33,6 @@ if( !jQuery ){
 					var X = animateIn[0];
 					var rightHand = animateIn.substring(2);
 					var operation = animateIn[1];
-
 					switch( operation ){
 						case "+": 
 							// get the current letter +1
@@ -41,20 +40,35 @@ if( !jQuery ){
 							break;
 						case "=": 
 							//get another letter's numbers
+							var secondOperation = rightHand[ rightHand.length - 1];
 							var rightHandNumber = parseInt( rightHand );
+
+
+
 							if( rightHandNumber ){
 								// if number just assign number
 								queue_number = rightHandNumber;
 							} else{
-								//if not number get the referenced number then + 1
-								queue_number = letter_cache[ rightHand ] + 1;	
+								//if not number get the referenced number then
+								var secondOperation = rightHand[ rightHand.length - 1];
+								var secondOpValue = 0;
+
+								if( secondOperation == "+" ){
+									rightHand = rightHand.substring( 0, rightHand.length - 1);
+									secondOpValue = 1;
+								} 
+
+
+								queue_number = letter_cache[ rightHand ] + secondOpValue;	
 							}
 
 							break;
 						default:
 							// get the current letter
 							queue_number = letter_cache[ X ] ? letter_cache[ X ] : letter_cache[ last_letter ] ;
+
 					}
+
 
 
 					letter_cache[ X ] = queue_number;
