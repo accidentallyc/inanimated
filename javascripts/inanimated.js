@@ -53,7 +53,7 @@ if( !jQuery ){
 							break;
 						default:
 							// get the current letter
-							queue_number = letter_cache[ X ] ;
+							queue_number = letter_cache[ X ] ? letter_cache[ X ] : letter_cache[ last_letter ] ;
 					}
 
 
