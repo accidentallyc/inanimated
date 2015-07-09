@@ -21,7 +21,7 @@
 
     <div class="row" >
         <div class="col s6 offset-s3">
-            <h1 animate-in="1">inAnimated.JS</h1>
+            <h1 animate-in="1"><a href="index.html">inAnimated.JS</a></h1>
             <div animate-in="2" >
               <p class="grey-text">Animate page elements as users visits!</p>
               <hr />
@@ -40,7 +40,7 @@
           </div>
 
           <div class="top-button">
-              <a  href="demos.html" animate-in="6" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">code</i></a>
+              <a href="demos.html" animate-in="6" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">code</i></a>
               <span animate-in="11" class="grey-text">demos</span>
           </div>
 
@@ -53,28 +53,51 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row" id="demos">
         <h5 animate-in="x=3" class="col s6 offset-s3">
-          Sample Usage <small class="grey-text" style="font-size:12px;">(this page is an example too)</small>
+          Demos Usage <small class="grey-text" style="font-size:12px;">(this page is an example too)</small>
           <hr/>
         </h5>
-        <iframe animate-in="x++" class="col s6 offset-s3 z-depth-1 card-panel orange accent-2 lighten-4" style="height:300px;" src="http://jsfiddle.net/accidentallyc/g6ha1tcy/embedded/html,js,resources,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        <style>
+          #demos .card-image{ width:100%;height:200px; background-position: center; background-size: contain;}
+        </style>
+        
+
+         <div class="col s2 offset-s3">
+          <a href="demos/grid-items.html">
+          <div class="card" animate-in="x++">
+            <div class="card-image" style="background-image:url(images/thumb-grid.gif)"></div>
+            <div class="card-content">
+              <p>Grid Items</p>
+            </div>
+          </div>
+          </a>
+        </div><!-- .card's row -->
+
+         <div class="col s2">
+          <a href="demos/animations.html">
+          <div class="card" animate-in="x++">
+            <div class="card-image"style="background-image:url(images/thumb-animations.gif)"></div>
+            <div class="card-content">
+              <p>Other Animations</p>
+            </div>
+          </div>
+          </a>
+        </div><!-- .card's row -->
+
+         <div class="col s2">
+          <a href="demos/fine-tuned-timing.html">
+          <div class="card" animate-in="x++">
+            <div class="card-image" style="background-image:url(images/thumb-fine-tuned-timing.gif)"></div>
+            <div class="card-content">
+              <p>Fine Tuned Timing</p>
+            </div>
+          </div>
+          </a>
+        </div><!-- .card's row -->
+
     </div>
 
-    <div class="row">
-        <h5 animate-in="x++" class="col s6 offset-s3">
-          More Demos 
-          <hr/>
-        </h5>
-        <div animate-in="x++" class="col s6 offset-s3 collection z-depth-1">
-            <a class="collection-item" href="demos/grid-items.html">Grid Items</a>
-            <a class="collection-item" href="demos/animations.html">Different Animations</a>
-            <a class="collection-item" href="demos/fine-tuned-timing.html">Fine Tuned Timing</a>
-        </div>
-        <div class="grey-text col s6 offset-s3" style="font-size:12px;">
-          <a class="right" animate-in="x++" href="demos.html">more</a>
-        </div>
-    </div>
 
     <!-- Support This -->
     <div class="row">

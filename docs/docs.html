@@ -3,7 +3,7 @@
     <title>inAnimated.js</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheets/inAnimate.css">
+    <link rel="stylesheet" href="../stylesheets/inAnimate.css">
   </head>
   <body >
     <style>
@@ -15,13 +15,13 @@
 
 
     <a animate-in="6" href="https://github.com/accidentallyc/inanimated" id="github-btn">
-        <img src="images/fork-sprite.png" />
+        <img src="../images/fork-sprite.png" />
     </a>
     
 
     <div class="row" >
         <div class="col s6 offset-s3">
-            <h1 animate-in="1">inAnimated.JS</h1>
+            <h1 animate-in="1"><a href="../index.html">inAnimated.JS</a></h1>
             <div animate-in="2" >
               <p class="grey-text">Animate page elements as users visits!</p>
               <hr />
@@ -35,17 +35,17 @@
     <div class="row">
         <div class="col s6 offset-s3" style="text-align: justify; padding: 0 4em;">
           <div class="top-button">
-              <a href="docs/docs.html" animate-in="5" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">toc</i></a>
+              <a href="../docs/docs.html" animate-in="5" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">toc</i></a>
               <span animate-in="10" class="grey-text">docs</span>
           </div>
 
-          <div class="top-button">
-              <a  href="demos.html" animate-in="6" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">code</i></a>
+          <div   class="top-button">
+              <a href="../demos.html" animate-in="6" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">code</i></a>
               <span animate-in="11" class="grey-text">demos</span>
           </div>
 
           <div class="top-button">
-              <a animate-in="7" class="btn-floating btn-large waves-effect waves-light red" href="https://github.com/accidentallyc/inanimated"><i class="material-icons">star</i></a>
+              <a animate-in="7" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">star</i></a>
               <span animate-in="12" class="grey-text">star me</span>
           </div>
 
@@ -55,26 +55,17 @@
 
     <div class="row">
         <h5 animate-in="x=3" class="col s6 offset-s3">
-          Sample Usage <small class="grey-text" style="font-size:12px;">(this page is an example too)</small>
+          Documentation <small class="grey-text" style="font-size:12px;">( this page is the example )</small>
           <hr/>
         </h5>
-        <iframe animate-in="x++" class="col s6 offset-s3 z-depth-1 card-panel orange accent-2 lighten-4" style="height:300px;" src="http://jsfiddle.net/accidentallyc/g6ha1tcy/embedded/html,js,resources,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-    </div>
+        <div class="center-align col s6 offset-s3" style="padding:1em;" animate-in="x++">
+            <p>Coming Soon... (in the next commit)</p>
+            <p>Interested? Why not watch the <a href="https://github.com/accidentallyc/inanimated">repo?</a>  :)</p> 
+        </div>
+    </div><!--row-->
 
-    <div class="row">
-        <h5 animate-in="x++" class="col s6 offset-s3">
-          More Demos 
-          <hr/>
-        </h5>
-        <div animate-in="x++" class="col s6 offset-s3 collection z-depth-1">
-            <a class="collection-item" href="demos/grid-items.html">Grid Items</a>
-            <a class="collection-item" href="demos/animations.html">Different Animations</a>
-            <a class="collection-item" href="demos/fine-tuned-timing.html">Fine Tuned Timing</a>
-        </div>
-        <div class="grey-text col s6 offset-s3" style="font-size:12px;">
-          <a class="right" animate-in="x++" href="demos.html">more</a>
-        </div>
-    </div>
+
+
 
     <!-- Support This -->
     <div class="row">
@@ -105,7 +96,7 @@
     <!-- Footer -->
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="javascripts/inanimated.js"></script>
+    <script type="text/javascript" src="../javascripts/inanimated.js"></script>
     <script>
         $.inAnimated.animate();
     </script>
