@@ -58,7 +58,6 @@ if( !jQuery ){
 
 
 					letter_cache[ X ] = queue_number;
-					console.log( animateIn, queue_number );
 					$this.attr("animate-queue-number",queue_number);
 					last_letter = X;
 				}
