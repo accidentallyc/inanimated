@@ -1,5 +1,5 @@
 # inanimated
-Animate the elements of your page when they load! [View it's website here!](accidentallyc.github.io/inanimated/)
+Animate the elements of your page when they load! [View it's website here!](http://accidentallyc.github.io/inanimated/)
 
 # Sample Usage
 ```html
